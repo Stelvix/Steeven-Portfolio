@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "title": "Système Feedback",
+        "description": "Projet collaboratif réalisé en équipe, visant à développer une plateforme de feedback pour une école. L'application permet aux élèves ainsi qu'au personnel de partager leurs avis et suggestions de manière centralisée. Ce projet a permis de mettre en place un système complet de gestion des retours, avec une base de données solide et une interface utilisateur intuitive. Le travail d'équipe a été essentiel et nous avons mené le projet jusqu'à son aboutissement avec succès.",
+        "image": "images/feedback.png",
+        "type": "projet",
+        "link": "projet.html?id=1",
+        "stack": [
+            "HTML",
+            "CSS",
+            "PHP",
+            "MySQL"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Création d'affiches",
+        "description": "Réalisation de plusieurs affiches visuelles pour des clients, dont cette affiche festive, pour la Saint-Valentin et pour mettre en avant une boutique de bijoux et cadeaux. Chaque création visait à refléter l’identité de l'identité du client et le style en fonction de l'occasion associé, tout en respectant les contraintes de communication visuelle et de diffusion. Ce projet a permis de développer un sens aiguisé de la composition graphique et de l’harmonisation des couleurs.",
+        "image": "images/Aury Empire.jpg",
+        "type": "projet",
+        "link": "projet.html?id=2",
+        "stack": [
+            "Illustrator"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Click and Cook",
+        "description": "Click and Cook est une application web qui permet de rechercher et de proposer des recettes en fonction des ingrédients disponibles chez l’utilisateur. L’application fournit des suggestions adaptées, gère les comptes utilisateurs avec authentification et utilise une base de données pour stocker les recettes et leurs informations. Son interface moderne et intuitive facilite la planification des repas tout en optimisant le temps et les ressources disponibles.",
+        "image": "images/clickandcook.png",
+        "type": "projet",
+        "link": "projet.html?id=6",
+        "stack": [
+            "HTML",
+            "Tailwind CSS",
+            "JavaScript",
+            "Supabase"
+        ]
+    }
+]

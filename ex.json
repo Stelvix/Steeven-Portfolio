@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Stage de première année",
+        "description": "Stage full distanciel de 2 mois réalisé au sein de l’entreprise Netir.fr. La mission consistait à transformer des maquettes Figma en composants fonctionnels intégrés dans Plasmic, afin d’optimiser la cohérence visuelle et la rapidité de mise en ligne. Ce stage m’a permis d’acquérir une rigueur professionnelle et de renforcer mes compétences en intégration web.",
+        "image": "images/Netir Accueil.png",
+        "link": "experience.html?id=1",
+        "type": "experience",
+        "rapportstage": "https://stage-omega-rosy.vercel.app/",
+        "competences": [
+            "Intégration web",
+            "Adaptation aux maquettes",
+            "Respect des délais",
+            "Rigueur professionnelle",
+            "Plasmic",
+            "Figma"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Freelance Graphisme",
+        "description": "Travaux graphiques réalisés en freelance pour divers clients. Les missions incluaient la création de logos, d’affiches et de supports promotionnels adaptés à différents besoins. Ces expériences m’ont permis de développer une approche orientée client, en alliant créativité, respect des délais et professionnalisme.",
+        "image": "images/freelance.jpg",
+        "type": "experience",
+        "link": "experience.html?id=2",
+        "competences": [
+            "Créativité",
+            "Communication avec le client",
+            "Gestion de projets",
+            "Respect des délais"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Projets de modélisation 3D",
+        "description": "Pour un client, nous avons réalisé le plan complet de sa boutique. Mon frère et moi avons pris les mesures sur place, créé un plan détaillé, puis modélisé l’ensemble en 3D avec SketchUp, permettant au client de visualiser sa boutique.",
+        "image": "images/3d image.jpg",
+        "type": "experience",
+        "link": "experience.html?id=3",
+        "competences": [
+            "SketchUp",
+            "Mesures sur site",
+            "Modélisation 3D",
+            "Planification"
+        ]
+    }
+]
