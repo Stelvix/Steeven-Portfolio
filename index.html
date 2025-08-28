@@ -7,22 +7,24 @@
     <title>Steeven - Portfolio de développeur web</title>
     <meta name="description"
         content="Bienvenue sur le portfolio de Steeven, développeur web passionné. Découvrez mes projets, compétences et ma vision pour le futur du web.">
-    <!-- On charge la police 'Inter' pour un look moderne -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="keywords"
+        content="Steeven, développeur web, portfolio, projets web, compétences en développement, design web, PHP, MySQL, HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, Plasmic">
+    <meta name="author" content="Steeven">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- On charge Tailwind CSS pour le style -->
-    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
             @apply bg-gray-50 text-gray-800;
         }
 
-        /* Animation simple pour le cercle */
-        @keyframes pulse-slow {
+         @keyframes pulse-slow {
             0%,
             100% {
                 transform: scale(1);
@@ -36,8 +38,7 @@
             animation: pulse-slow 6s infinite ease-in-out;
         }
 
-        /* Styles pour les bulles d'arrière-plan */
-        .bubble-container {
+         .bubble-container {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -53,8 +54,7 @@
             animation: bubble-float 25s linear infinite;
         }
 
-        /* Animation de flottement des bulles */
-        @keyframes bubble-float {
+         @keyframes bubble-float {
             0% {
                 transform: translateY(100vh) scale(0);
                 opacity: 0;
@@ -73,8 +73,7 @@
             }
         }
 
-        /* Personnalisation de chaque bulle pour un effet plus naturel */
-        .bubble-1 { width: 40px; height: 40px; bottom: -100px; left: 10%; animation-duration: 18s; animation-delay: 2s; }
+         .bubble-1 { width: 40px; height: 40px; bottom: -100px; left: 10%; animation-duration: 18s; animation-delay: 2s; }
         .bubble-2 { width: 60px; height: 60px; bottom: -100px; left: 20%; animation-duration: 25s; }
         .bubble-3 { width: 30px; height: 30px; bottom: -100px; left: 30%; animation-duration: 20s; animation-delay: 4s; }
         .bubble-4 { width: 50px; height: 50px; bottom: -100px; left: 40%; animation-duration: 22s; animation-delay: 1s; }
@@ -90,26 +89,21 @@
 <body class="scroll-smooth">
     <main>
 
-        <!-- Barre de navigation principale avec menu déroulant intégré -->
-        <nav
+         <nav
             class="sticky top-4 z-50 mx-5 rounded-full bg-white bg-opacity-80 shadow-lg backdrop-blur-md transition-all duration-300 hover:shadow-2xl">
-            <!-- Contenu de la barre de navigation (logo, bouton, liens) -->
-            <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-                <!-- Nom/Logo à gauche -->
-                <a href="#accueil"
+             <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+                 <a href="#accueil"
                     class="text-2xl text-gray-900 font-semibold hover:text-blue-600 transition duration-300 cursor-pointer">
                     Steeven.dev
                 </a>
                 
-                <!-- Bouton Hamburger (visible sur les petits écrans) -->
-                <button id="menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                 <button id="menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
 
-                <!-- Liens de navigation (visible sur les grands écrans) -->
-            <div class="hidden md:flex space-x-6 md:space-x-8 text-gray-900 font-medium text-sm md:text-base">
+             <div class="hidden md:flex space-x-6 md:space-x-8 text-gray-900 font-medium text-sm md:text-base">
                 <a href="#accueil" class="hover:text-blue-600 transition duration-300">Accueil</a>
                 <a href="#apropos" class="hover:text-blue-600 transition duration-300">A propos</a>
                 <a href="#projets" class="hover:text-blue-600 transition duration-300">Projets</a>
@@ -118,8 +112,7 @@
             </div>
             </div>
 
-            <!-- Menu dropdown qui apparaît sur mobile, positionné en bas de la barre de nav -->
-            <div id="mobile-menu"
+             <div id="mobile-menu"
                 class="absolute inset-x-0 top-full mt-2 md:hidden overflow-hidden max-h-0 opacity-0 transform -translate-y-4 rounded-b-xl bg-white shadow-lg transition-all duration-300 ease-in-out">
                 <div class="flex flex-col items-center py-4 space-y-2 text-gray-900 font-medium text-base">
                     <a href="#accueil" class="hover:text-blue-600 transition duration-300 w-full text-center py-2">Accueil</a>
@@ -132,10 +125,8 @@
         </nav>
 
 
-        <!-- Section Hero (Accueil) -->
-        <section id="accueil" class="relative h-screen flex justify-center items-center text-center bg-slate-950 text-white">
-            <!-- Conteneur pour les bulles d'arrière-plan -->
-            <div class="bubble-container z-0">
+         <section id="accueil" class="relative h-screen flex justify-center items-center text-center bg-slate-950 text-white">
+             <div class="bubble-container z-0">
                 <div class="bubble bubble-1"></div>
                 <div class="bubble bubble-2"></div>
                 <div class="bubble bubble-3"></div>
@@ -148,17 +139,14 @@
                 <div class="bubble bubble-10"></div>
             </div>
         
-            <!-- Contenu de la section Hero (au-dessus des bulles) -->
-            <div class="z-10 flex flex-col items-center">
-                <!-- Cercle avec l'image -->
-                <div
+             <div class="z-10 flex flex-col items-center">
+                 <div
                     class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-r from-pink-400 via-purple-500 to-fuchsia-700 flex items-center justify-center animate-pulse-slow mt-[100px] shadow-2xl">
                     <img src="images/Profil-picture.png" alt="Photo de Steeven"
                         class="rounded-full w-full h-full border-4 border-white object-cover shadow-2xl">
                 </div>
         
-                <!-- Texte -->
-                <div class="mt-8 space-y-4">
+                 <div class="mt-8 space-y-4">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">Bonjour, je suis Steeven.
                     </h1>
                     <p class="text-base md:text-xl text-gray-300 max-w-2xl mx-auto">
@@ -174,15 +162,12 @@
         </section>
 
 
-<!-- Section À propos -->
-<section id="apropos" class="py-20 px-4 md:px-8 bg-gray-100 text-gray-900">
+ <section id="apropos" class="py-20 px-4 md:px-8 bg-gray-100 text-gray-900">
     <div class="max-w-6xl mx-auto space-y-12">
         <h2 class="text-4xl font-bold text-center mb-12">À propos</h2>
 
-    <!-- Plus sur moi -->
-    <div class="flex flex-col md:flex-row md:items-center gap-8">
-        <!-- Texte -->
-        <div class="md:w-2/3">
+     <div class="flex flex-col md:flex-row md:items-center gap-8">
+         <div class="md:w-2/3">
             <h3 class="text-2xl font-semibold mb-4">Plus sur moi</h3>
             <p class="text-gray-700 leading-relaxed">
                 Je m'appelle <strong class="text-blue-700">Steeven</strong>, développeur web passionné par la création de
@@ -197,8 +182,7 @@
                 Chaque projet est pour moi une opportunité d'innover et d'offrir une expérience utilisateur unique.
             </p>
         </div>
-        <!-- Image -->
-        <div class="md:w-1/3 flex justify-center">
+         <div class="md:w-1/3 flex justify-center">
             <div class="w-60 h-60 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white shadow-lg">
                 <img src="images/a propos picture.jpg" alt="Steeven" class="w-full h-full object-cover">
             </div>
@@ -206,8 +190,7 @@
     </div>
 
 
-        <!-- Mes compétences -->
-        <div>
+         <div>
             <h3 class="text-2xl font-semibold mb-6 text-center md:text-left">Mes compétences</h3>
             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
                 <li class="flex items-center gap-3">
@@ -556,10 +539,8 @@
 
     </main>
     
-    <!-- Script JavaScript pour le menu burger -->
-    <script>
-        // On attend que le DOM soit complètement chargé pour manipuler les éléments
-        document.addEventListener('DOMContentLoaded', function () {
+     <script>
+         document.addEventListener('DOMContentLoaded', function () {
             // On récupère le bouton du menu burger et le menu mobile par leur ID
             const menuButton = document.getElementById('menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
