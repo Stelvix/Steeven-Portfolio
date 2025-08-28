@@ -30,12 +30,54 @@
         "description": "Click and Cook est une application web qui permet de rechercher et de proposer des recettes en fonction des ingrédients disponibles chez l’utilisateur. L’application fournit des suggestions adaptées, gère les comptes utilisateurs avec authentification et utilise une base de données pour stocker les recettes et leurs informations. Son interface moderne et intuitive facilite la planification des repas tout en optimisant le temps et les ressources disponibles.",
         "image": "images/clickandcook.png",
         "type": "projet",
-        "link": "projet.html?id=6",
+        "link": "projet.html?id=3",
         "stack": [
             "HTML",
             "Tailwind CSS",
             "JavaScript",
             "Supabase"
         ]
+    }, 
+    {
+        "id": 4,
+        "title": "Portfolio",
+        "description": "Développement d'un portfolio personnel pour présenter mes compétences, projets et expériences professionnelles. Le site est conçu pour être à la fois esthétique et fonctionnel, avec une navigation fluide et une mise en page responsive. Ce projet m'a permis de mettre en pratique mes compétences en développement web tout en créant une vitrine professionnelle pour attirer de potentiels employeurs ou clients.",
+        "image": "images/portfolio.png",
+        "type": "projet",
+        "link": "projet.html?id=4",
+        "stack": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }, 
+    {
+        "id": 5,
+        "title": "Projet scolaire Application pour une bijouterie",
+        "description": "Application de gestion pour un atelier de bijouterie permettant aux chefs d’atelier et aux opérateurs (fondeurs, sertisseurs, polisseurs) de suivre chaque étape de la création et réparation des bijoux. Le projet utilise HTML et CSS pour la structure et le design des interfaces, JavaScript pour les interactions dynamiques, PHP et MySQL pour la gestion back-end et la base de données. L’application inclut la gestion des matériaux, l’ajout de commentaires et d’images, l’attribution des tâches, ainsi que la vérification de la qualité, offrant un suivi collaboratif et efficace des projets.",
+        "image": "images/bijouterie.png",
+        "type": "projet",
+        "link": "projet.html?id=5",
+        "stack": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "MySQL"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Projet scolaire Music Art - Cours de musique en ligne",
+        "description": "Site web de cours de musique en ligne permettant à tout âge et tout niveau d'apprendre un instrument ou le chant. Le projet utilise HTML et CSS pour la structure et la mise en page, ainsi que JavaScript pour les interactions dynamiques. Le site présente des informations sur la musique, des témoignages d'élèves, un formulaire de contact, et met en avant les avantages de l'apprentissage musical avec des professionnels passionnés.",
+        "image": "images/Musique.png",
+        "type": "projet",
+        "link": "projet.html?id=6",
+        "stack": [
+            "HTML",
+            "CSS"
+            
+        ]
     }
+
 ]
