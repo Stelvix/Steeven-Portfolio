@@ -1,0 +1,5 @@
+# robots.txt pour le site de Steeven
+User-agent: *
+Disallow:
+
+Sitemap: https://steeven-portfolio-taupe.vercel.app/sitemap.xml

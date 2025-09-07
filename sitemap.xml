@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://steeven-portfolio-taupe.vercel.app/</loc>
+    <lastmod>2025-09-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- À propos (intégré dans la page d'accueil, mais utile à segmentation) -->
+  <url>
+    <loc>https://steeven-portfolio-taupe.vercel.app/#apropos</loc>
+    <lastmod>2025-09-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projets -->
+  <url>
+    <loc>https://steeven-portfolio-taupe.vercel.app/#projets</loc>
+    <lastmod>2025-09-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Vision -->
+  <url>
+    <loc>https://steeven-portfolio-taupe.vercel.app/#vision</loc>
+    <lastmod>2025-09-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://steeven-portfolio-taupe.vercel.app/#contact</loc>
+    <lastmod>2025-09-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>
