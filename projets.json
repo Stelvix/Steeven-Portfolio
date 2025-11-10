@@ -85,11 +85,28 @@
         "description": "Workshop Agent Secret est un projet réalisé en équipe à l’EPSI. Nous avons conçu une caméra connectée avec un ESP32-CAM, alimentée par une batterie externe et accessible à distance via Wi-Fi grâce à son adresse IP. Un bouton physique déclenchait un script Python qui lançait automatiquement l’enregistrement vidéo. Ce projet m’a permis de développer des compétences en Python, IoT, communication réseau et travail collaboratif.",
         "image": "images/esp.jpg",
         "type": "projet",
-        "link": "projet.html?id=6",
+        "link": "projet.html?id=7",
         "stack": [
             "Python (Open CV, Pip, GPIO)",
             "Arduino"
         ]
-    }
+    },
+{
+    "id": 8,
+    "title": "Projet scolaire Zootopia - Application de gestion d'un zoo",
+    "description": "Zootopia est une application web développée dans le cadre d'un projet scolaire. Elle permet de gérer l'ensemble d'un zoo, incluant les animaux, les enclos et les espaces. L'application offre une interface complète pour ajouter, modifier et suivre les informations des animaux, tout en respectant des contraintes de gestion comme la capacité maximale des enclos ou les validations d'identifiants uniques. Développée avec Symfony, PHP et MySQL, elle utilise Twig pour le rendu des pages et respecte les bonnes pratiques MVC.",
+    "image": "images/zootopia.png",
+    "type": "projet",
+    "link": "projet.html?id=8",
+    "stack": [
+        "Symfony",
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "Twig"
+    ]
+}
+
 
 ]
