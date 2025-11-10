@@ -45,7 +45,7 @@ N'hésitez pas à me contacter pour toute collaboration ou opportunité.
 
 *   **Email:** [hounkpesagbojeff@gmail.com](mailto:hounkpesagbojeff@gmail.com)
 *   **GitHub:** [Stelvix](https://github.com/Stelvix)
-*   **LinkedIn:** [Mon profil LinkedIn](www.linkedin.com/in/hounkpe-sagbo-elvis-steeven-jeff-384424267)
+*   **LinkedIn:** [Mon profil LinkedIn](https://linkedin.com/in/hounkpe-sagbo-elvis-steeven-jeff-384424267)
 
 ## Lancer le projet localement
 
