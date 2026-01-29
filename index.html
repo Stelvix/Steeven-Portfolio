@@ -83,6 +83,19 @@
         .bubble-8 { width: 55px; height: 55px; bottom: -100px; left: 80%; animation-duration: 19s; animation-delay: 7s; }
         .bubble-9 { width: 25px; height: 25px; bottom: -100px; left: 90%; animation-duration: 23s; animation-delay: 8s; }
         .bubble-10 { width: 65px; height: 65px; bottom: -100px; left: 95%; animation-duration: 26s; animation-delay: 10s; }
+
+        animation: var(--animate-bounce); /* bounce 1s infinite */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
     </style>
 </head>
 
