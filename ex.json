@@ -43,5 +43,35 @@
             "Modélisation 3D",
             "Planification"
         ]
-    }
+    },
+    {
+  "id": 4,
+  "title": "Stage de deuxième année",
+  "description": "Stage axé sur le développement web, le back-end et l’administration système. J’ai travaillé sur des APIs en C# .NET (Minimal API) avec authentification JWT, la gestion de bases de données MariaDB/MySQL, ainsi que l’administration d’environnements Linux et de machines virtuelles via Proxmox. Ce stage m’a permis de renforcer mes compétences en développement full-stack, en automatisation et en architecture API.",
+  "image": "images/la tete dans la toile.jpg",
+  "link": "experience.html?id=2",
+  "type": "experience",
+  "rapportstage": "",
+  "competences": [
+    "WordPress",
+    "ACF",
+    "SCSS",
+    "C# .NET 10 (Minimal API)",
+    "Authentification JWT",
+    "MariaDB / MySQL",
+    "SQL (requêtes et schéma)",
+    "phpMyAdmin",
+    "Linux (services, fichiers, réseau)",
+    "Proxmox (machines virtuelles)",
+    "Apache",
+    "SCP (transfert sécurisé)",
+    "PowerShell",
+    "Shell scripting",
+    "API RESTful",
+    "Synchronisation de données",
+    "Gestion d’erreurs",
+    "Débogage"
+  ]
+}
+
 ]
