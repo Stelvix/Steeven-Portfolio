@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de développeur web - réalisations</title>
+    <meta name="description"
+        content="Bienvenue sur le portfolio de Steeven, développeur web passionné. Découvrez mes projets, compétences et ma vision pour le futur du web.">
+    <meta name="author" content="Steeven">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            /* bg-gray-50 */
+            color: #1f2937;
+            /* text-gray-800 */
+        }
+
+        .bubble-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+
+        .bubble {
+            position: absolute;
+            background: linear-gradient(to top right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+            border-radius: 50%;
+            animation: bubble-float 25s linear infinite;
+        }
+
+        @keyframes bubble-float {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+
+            1% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0.4;
+            }
+
+            99% {
+                transform: translateY(-20vh) scale(1.5);
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: translateY(-20vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="scroll-smooth">
+
+    <nav
+        class="sticky top-4 z-50 mx-5 rounded-full bg-white bg-opacity-80 shadow-lg backdrop-blur-md transition-all duration-300 hover:shadow-2xl">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+            <a href="index.html#accueil"
+                class="text-2xl text-gray-900 font-semibold hover:text-blue-600 transition duration-300 cursor-pointer">
+                Steeven.dev
+            </a>
+
+            <button id="menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <div class="hidden md:flex space-x-6 md:space-x-8 text-gray-900 font-medium text-sm md:text-base">
+                <a href="index.html#accueil" class="hover:text-blue-600 transition duration-300">Accueil</a>
+                <a href="index.html#apropos" class="hover:text-blue-600 transition duration-300">A propos</a>
+                <a href="index.html#projets" class="hover:text-blue-600 transition duration-300">Projets</a>
+                <a href="index.html#vision" class="hover:text-blue-600 transition duration-300">Ma vision</a>
+                <a href="index.html#contact" class="hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="absolute inset-x-0 top-full mt-2 md:hidden overflow-hidden max-h-0 opacity-0 transform -translate-y-4 rounded-b-xl bg-white shadow-lg transition-all duration-300 ease-in-out">
+            <div class="flex flex-col items-center py-4 space-y-2 text-gray-900 font-medium text-base">
+                <a href="index.html#accueil"
+                    class="hover:text-blue-600 transition duration-300 w-full text-center py-2">Accueil</a>
+                <a href="index.html#apropos"
+                    class="hover:text-blue-600 transition duration-300 w-full text-center py-2">A propos</a>
+                <a href="index.html#projets"
+                    class="hover:text-blue-600 transition duration-300 w-full text-center py-2">Projets</a>
+                <a href="index.html#vision"
+                    class="hover:text-blue-600 transition duration-300 w-full text-center py-2">Ma vision</a>
+                <a href="index.html#contact"
+                    class="hover:text-blue-600 transition duration-300 w-full text-center py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold">Mes réalisations freelance</h1>
+            <p class="text-gray-600 mt-3">Voici quelques-unes de mes réalisations en tant que freelance :</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto mt-12">
+            <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <script>
+        // Charger le JSON avec fetch
+        fetch('galerie.json')
+            .then(response => response.json())
+            .then(galleryData => {
+                const gallery = document.getElementById('gallery');
+
+                gallery.innerHTML = galleryData.map(project => `
+                    <figure class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                        <div class="overflow-hidden">
+                            <img src="${project.image}"
+                                 alt="${project.title}"
+                                 class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+                        </div>
+                        <figcaption class="p-5">
+                            <h3 class="text-lg font-semibold text-gray-900">${project.title}</h3>
+                            <p class="text-sm text-gray-600 mt-2 flex items-center gap-2 flex-wrap">
+                                <span>${project.subtitle}</span>
+                                <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-xs font-semibold">
+                                    ${project.tecno || 'Tech'}
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                `).join('');
+            })
+            .catch(err => console.error("Erreur chargement galerie :", err));
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuButton.addEventListener('click', function () {
+                const isHidden = mobileMenu.classList.contains('max-h-0');
+
+                if (isHidden) {
+                    mobileMenu.classList.remove('max-h-0', 'opacity-0', '-translate-y-4');
+                    mobileMenu.classList.add('max-h-screen', 'opacity-100', 'translate-y-0');
+                } else {
+                    mobileMenu.classList.remove('max-h-screen', 'opacity-100', 'translate-y-0');
+                    mobileMenu.classList.add('max-h-0', 'opacity-0', '-translate-y-4');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -51,6 +51,7 @@
           <h1 class="text-4xl font-bold mb-4">${experiences.title}</h1>
           <p class="text-gray-700 mb-4">${experiences.description}</p>
           ${experiences.competences && experiences.competences.length ? `<p class="text-gray-600 mb-4"><strong>Technologies & compétences utilisées :</strong> ${experiences.competences.join(', ')}</p>` : ''}
+          ${experiences.lienRealisation ? `<a href="${experiences.lienRealisation}" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-gray-900 transition-colors">Voir mes réalisations</a>` : ''}
       </div>
   </div>
 `;

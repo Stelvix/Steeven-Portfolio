@@ -23,6 +23,7 @@
         "image": "images/freelance.jpg",
         "type": "experience",
         "link": "experience.html?id=2",
+        "lienRealisation": "realisations.html",
         "competences": [
             "Créativité",
             "Communication avec le client",
