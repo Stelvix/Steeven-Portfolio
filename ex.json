@@ -45,10 +45,10 @@
             "Planification"
         ]
     },
-    {
+{
   "id": 4,
   "title": "Stage de deuxième année",
-  "description": "Stage axé sur le développement web, le back-end et l’administration système. J’ai travaillé sur des APIs en C# .NET (Minimal API) avec authentification JWT, la gestion de bases de données MariaDB/MySQL, ainsi que l’administration d’environnements Linux et de machines virtuelles via Proxmox. J’ai également réalisé un POC WordPress Headless avec un front-end développé en Blazor Server. L’objectif était de découpler complètement le CMS WordPress (utilisé comme back-end via son API REST) d’une application front-end moderne en C#. Ce Proof of Concept m’a permis d’explorer la consommation d’API REST via HttpClient, la sérialisation/désérialisation JSON, la gestion des états côté serveur, ainsi que les enjeux de performance et de sécurisation des échanges entre services. Ce stage m’a permis de renforcer mes compétences en architecture découplée, en intégration API et en développement full-stack orienté .NET.",
+  "description": "Stage axé sur le développement web, le back-end et l’administration système. Développement d’APIs en **C# .NET (Minimal API)** avec **authentification JWT**, gestion de bases **MariaDB/MySQL** et administration **Linux / Proxmox**. Réalisation d’un **POC WordPress Headless** avec un front-end en **Blazor Server**, en consommant l’**API REST WordPress** via **HttpClient**. Ce projet m’a permis d’explorer une **architecture découplée**, la gestion des échanges **JSON** et les enjeux de performance et de sécurisation des flux.",
   "image": "images/la tete dans la toile.jpg",
   "link": "experience.html?id=2",
   "type": "experience",
@@ -56,20 +56,15 @@
   "competences": [
     "WordPress",
     "WordPress Headless",
-    "API REST WordPress",
     "Blazor Server",
     "C# .NET 10 (Minimal API)",
     "Authentification JWT",
+    "API REST",
     "HttpClient",
-    "Sérialisation JSON",
     "MariaDB / MySQL",
-    "SQL (requêtes et schéma)",
     "Linux",
     "Proxmox",
-    "Apache",
-    "Architecture découplée",
-    "Consommation d’API",
-    "Débogage"
+    "Architecture découplée"
   ]
 }
 ]
