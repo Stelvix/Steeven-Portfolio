@@ -52,7 +52,7 @@
   "image": "images/la tete dans la toile.jpg",
   "link": "experience.html?id=2",
   "type": "experience",
-  "rapportstage": "",
+  "rapportstage": "https://stage-b2.vercel.app/",
   "competences": [
     "WordPress",
     "WordPress Headless",
