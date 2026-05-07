@@ -175,7 +175,7 @@
     <main>
 
         <nav
-            class="sticky top-4 z-50 mx-5 rounded-full bg-white bg-opacity-80 shadow-lg backdrop-blur-md transition-all duration-300 hover:shadow-2xl">
+            class="fixed top-4 left-5 right-5 z-50 rounded-full bg-white bg-opacity-80 shadow-lg backdrop-blur-md transition-all duration-300 hover:shadow-2xl">
             <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
                 <a href="#accueil"
                     class="text-2xl text-gray-900 font-semibold hover:text-blue-600 transition duration-300 cursor-pointer">
@@ -275,34 +275,42 @@
                 <div
                     class="h-1 w-24 mx-auto mb-16 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full">
                 </div>
-                <div class="flex flex-col md:flex-row md:items-center gap-8">
-                    <div class="md:w-2/3">
-                        <h3 class="text-2xl font-semibold mb-4"></h3>
-                        <p class="text-gray-700 leading-relaxed">
-                            Je m'appelle <strong class="text-blue-700">Steeven</strong>, développeur web passionné par
-                            la création de
-                            sites dynamiques et modernes.
-                            Mes compétences couvrent le <span class="text-blue-700 font-medium">développement web
-                                front-end</span> (HTML, CSS, JavaScript, Plasmic, Bootstrap, Tailwind
-                            CSS),
-                            le <span class="text-blue-700 font-medium">développement web back-end</span> (PHP & MySQL,
-                            SQL, Postman, Supabase, XAMPP .NET), le <span
-                                class="font-medium text-blue-700">versionning</span> avec Git et
-                            GitLab,
-                            la création <span class="text-blue-700 font-medium">d'interfaces dynamiques</span> et
-                            adaptatives, ainsi que le design graphique (Photoshop, Illustrator,
-                            Adobe XD, CorelDRAW, Figma).
-                            Je suis également compétent en travail <span class="text-blue-700 font-medium">d'équipe et
-                                communication</span>, et <span class="text-blue-700 font-medium">bilingue
-                                français-anglais</span>.
-                            Chaque projet est pour moi une opportunité d'innover et d'offrir une expérience utilisateur
-                            unique.
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+                    <div class="lg:col-span-3 order-2 lg:order-1">
+                        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-5">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            Développeur web fullstack
+                        </span>
+
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-5 leading-tight">
+                            Cr&eacute;er des interfaces claires, utiles et bien construites.
+                        </h3>
+
+                        <p class="text-gray-700 leading-relaxed text-lg max-w-3xl">
+                            Je m'appelle <strong class="text-blue-700">Steeven</strong>, développeur web passionné; par la création d'applications modernes. J'aime travailler autant sur la structure technique que sur l'expérience utilisateur, avec une attention particulière pour les interfaces propres, responsives et agréables à utiliser.
                         </p>
+
+                        <div class="mt-8">
+                            <h4 class="text-sm font-bold uppercase tracking-wider text-gray-500 mb-4">Soft skills</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-gray-100 text-gray-700 text-sm font-medium"><i class="fa-solid fa-lightbulb text-yellow-500"></i>Curiosit&eacute;</span>
+                                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-gray-100 text-gray-700 text-sm font-medium"><i class="fa-solid fa-user-check text-blue-500"></i>Autonomie</span>
+                                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-gray-100 text-gray-700 text-sm font-medium"><i class="fa-solid fa-palette text-pink-500"></i>Cr&eacute;ativit&eacute;</span>
+                                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-gray-100 text-gray-700 text-sm font-medium"><i class="fa-solid fa-people-group text-emerald-500"></i>Collaboration</span>
+                                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-gray-100 text-gray-700 text-sm font-medium"><i class="fa-solid fa-bullseye text-purple-500"></i>Rigueur</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:w-1/3 flex justify-center">
-                        <div
-                            class="w-60 h-60 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                            <img src="images/a propos picture.jpg" alt="Steeven" class="w-full h-full object-cover">
+
+                    <div class="lg:col-span-2 order-1 lg:order-2 flex justify-center lg:justify-end">
+                        <div class="relative">
+                            <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                                <img src="images/a propos picture.jpg" alt="Steeven" class="w-full h-full object-cover">
+                            </div>
+                            <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-max max-w-[260px] rounded-2xl bg-white px-5 py-3 shadow-xl border border-gray-100 text-center">
+                                <p class="text-sm text-gray-500">Recherche alternance</p>
+                                <p class="font-bold text-blue-700">Septembre 2026</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,102 +325,96 @@
                     class="h-1 w-24 mx-auto mb-16 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full">
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Front-End -->
                     <div
-                        class="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <h4 class="text-xl font-bold mb-4 text-blue-600">Front-End</h4>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium hover:scale-110 transition">HTML</span>
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium hover:scale-110 transition">CSS</span>
-                            <span
-                                class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium hover:scale-110 transition">JavaScript</span>
-                            <span
-                                class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium hover:scale-110 transition">Vue.js</span>
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium hover:scale-110 transition">React</span>
-                            <span
-                                class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm font-medium hover:scale-110 transition">Tailwind</span>
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium hover:scale-110 transition">Bootstrap</span>
+                        class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-5 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-blue-600">Front-End</h4>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-blue-50 border border-blue-100 p-3 text-blue-700 hover:scale-105 transition"><i class="fa-brands fa-html5 text-2xl"></i><span class="text-xs font-semibold">HTML</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-sky-50 border border-sky-100 p-3 text-sky-700 hover:scale-105 transition"><i class="fa-brands fa-css3-alt text-2xl"></i><span class="text-xs font-semibold">CSS</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-yellow-50 border border-yellow-100 p-3 text-yellow-700 hover:scale-105 transition"><i class="fa-brands fa-js text-2xl"></i><span class="text-xs font-semibold">JS</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-emerald-50 border border-emerald-100 p-3 text-emerald-700 hover:scale-105 transition"><i class="fa-brands fa-vuejs text-2xl"></i><span class="text-xs font-semibold">Vue.js</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-cyan-50 border border-cyan-100 p-3 text-cyan-700 hover:scale-105 transition"><i class="fa-brands fa-react text-2xl"></i><span class="text-xs font-semibold">React</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-cyan-50 border border-cyan-100 p-3 text-cyan-700 hover:scale-105 transition"><i class="fa-solid fa-wind text-2xl"></i><span class="text-xs font-semibold">Tailwind</span></div>
                         </div>
                     </div>
 
-                    <!-- Back-End -->
                     <div
-                        class="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <h4 class="text-xl font-bold mb-4 text-green-600">Back-End</h4>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium hover:scale-110 transition">PHP</span>
-                            <span
-                                class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium hover:scale-110 transition">MySQL</span>
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium hover:scale-110 transition">Symfony</span>
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium hover:scale-110 transition">Python</span>
-                            <span
-                                class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm font-medium hover:scale-110 transition">API
-                                REST</span>
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium hover:scale-110 transition">Supabase</span>
-                            <span
-                                class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium hover:scale-110 transition">C#
-                                .NET</span>
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium hover:scale-110 transition">Java (Spring Boot)</span>
+                        class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-5 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-purple-600">Back-End & API</h4>
                         </div>
-                    </div>
-                    <!--Bases de données-->
-                    <div
-                        class="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
-                        <h4 class="text-xl font-bold mb-4 text-green-600">Bases de donnée</h4>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium hover:scale-110 transition">Maria
-                                DB</span>
-                            <span
-                                class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium hover:scale-110 transition">MySQL</span>
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium hover:scale-110 transition">SQL
-                                Server</span>
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium hover:scale-110 transition">Supabase</span>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-indigo-50 border border-indigo-100 p-3 text-indigo-700 hover:scale-105 transition"><i class="fa-solid fa-code text-2xl"></i><span class="text-xs font-semibold">C# .NET</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-slate-50 border border-slate-200 p-3 text-slate-800 hover:scale-105 transition"><i class="fa-brands fa-symfony text-2xl"></i><span class="text-xs font-semibold">Symfony</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-violet-50 border border-violet-100 p-3 text-violet-700 hover:scale-105 transition"><i class="fa-brands fa-php text-2xl"></i><span class="text-xs font-semibold">PHP</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-red-50 border border-red-100 p-3 text-red-700 hover:scale-105 transition"><i class="fa-brands fa-java text-2xl"></i><span class="text-xs font-semibold">Java</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-green-50 border border-green-100 p-3 text-green-700 hover:scale-105 transition"><i class="fa-solid fa-leaf text-2xl"></i><span class="text-xs font-semibold">Spring</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-orange-50 border border-orange-100 p-3 text-orange-700 hover:scale-105 transition"><i class="fa-solid fa-key text-2xl"></i><span class="text-xs font-semibold">JWT</span></div>
                         </div>
                     </div>
 
-                    <!-- Dev & Tools -->
                     <div
-                        class="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100 lg:col-start-2">
-                        <h4 class="text-xl font-bold mb-4 text-orange-600">Dev & Tools</h4>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm font-medium hover:scale-110 transition">Git</span>
-                            <span
-                                class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium hover:scale-110 transition">GitLab</span>
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium hover:scale-110 transition">Azure
-                                DevOps</span>
-                            <span
-                                class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium hover:scale-110 transition">Postman</span>
-                            <span
-                                class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium hover:scale-110 transition">XAMPP</span>
-                            <span
-                                class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium hover:scale-110 transition">Figma</span>
-
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium hover:scale-110 transition">Wordpress</span>
-                            <span
-                                class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium hover:scale-110 transition">Plasmic</span>
+                        class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-5 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-emerald-600">Bases de données</h4>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-emerald-50 border border-emerald-100 p-3 text-emerald-700 hover:scale-105 transition"><i class="fa-solid fa-database text-2xl"></i><span class="text-xs font-semibold">MySQL</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-green-50 border border-green-100 p-3 text-green-700 hover:scale-105 transition"><i class="fa-solid fa-server text-2xl"></i><span class="text-xs font-semibold">MariaDB</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-slate-50 border border-slate-200 p-3 text-slate-800 hover:scale-105 transition"><i class="fa-solid fa-table text-2xl"></i><span class="text-xs font-semibold">SQL Server</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-blue-50 border border-blue-100 p-3 text-blue-700 hover:scale-105 transition"><i class="fa-solid fa-bolt text-2xl"></i><span class="text-xs font-semibold">Supabase</span></div>
                         </div>
                     </div>
 
+                    <div
+                        class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-5 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-orange-600">Dev & Outils</h4>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-gray-50 border border-gray-200 p-3 text-gray-800 hover:scale-105 transition"><i class="fa-brands fa-git-alt text-2xl"></i><span class="text-xs font-semibold">Git</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-orange-50 border border-orange-100 p-3 text-orange-700 hover:scale-105 transition"><i class="fa-brands fa-gitlab text-2xl"></i><span class="text-xs font-semibold">GitLab</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-red-50 border border-red-100 p-3 text-red-700 hover:scale-105 transition"><i class="fa-solid fa-paper-plane text-2xl"></i><span class="text-xs font-semibold">Postman</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-slate-50 border border-slate-200 p-3 text-slate-800 hover:scale-105 transition"><i class="fa-brands fa-linux text-2xl"></i><span class="text-xs font-semibold">Linux</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-sky-50 border border-sky-100 p-3 text-sky-700 hover:scale-105 transition"><i class="fa-brands fa-docker text-2xl"></i><span class="text-xs font-semibold">Docker</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-blue-50 border border-blue-100 p-3 text-blue-700 hover:scale-105 transition"><i class="fa-solid fa-dharmachakra text-2xl"></i><span class="text-xs font-semibold">Kubernetes</span></div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-5 hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-100 sm:col-span-2 lg:col-span-2">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-10 h-10 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-pink-600">Design & Création</h4>
+                        </div>
+                        <div class="grid grid-cols-3 sm:grid-cols-6 gap-3">
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-pink-50 border border-pink-100 p-3 text-pink-700 hover:scale-105 transition"><i class="fa-brands fa-figma text-2xl"></i><span class="text-xs font-semibold">Figma</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-purple-50 border border-purple-100 p-3 text-purple-700 hover:scale-105 transition"><i class="fa-solid fa-bezier-curve text-2xl"></i><span class="text-xs font-semibold">Adobe XD</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-blue-50 border border-blue-100 p-3 text-blue-700 hover:scale-105 transition"><i class="fa-solid fa-image text-2xl"></i><span class="text-xs font-semibold">Photoshop</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-orange-50 border border-orange-100 p-3 text-orange-700 hover:scale-105 transition"><i class="fa-solid fa-pen-fancy text-2xl"></i><span class="text-xs font-semibold">Illustrator</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-green-50 border border-green-100 p-3 text-green-700 hover:scale-105 transition"><i class="fa-solid fa-palette text-2xl"></i><span class="text-xs font-semibold">CorelDRAW</span></div>
+                            <div class="flex flex-col items-center justify-center gap-2 rounded-xl bg-cyan-50 border border-cyan-100 p-3 text-cyan-700 hover:scale-105 transition"><i class="fa-solid fa-cube text-2xl"></i><span class="text-xs font-semibold">SketchUp</span></div>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </section>
 
