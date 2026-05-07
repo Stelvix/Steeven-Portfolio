@@ -36,6 +36,54 @@
             return parseInt(params.get('id')) || 0;
         }
 
+        function getExperienceTag(experience) {
+            return experience.tags && experience.tags.length ? experience.tags[0] : '';
+        }
+
+        function getExperienceBadgeLabel(tag) {
+            if (tag === 'stage') {
+                return 'Stage';
+            }
+
+            if (tag === 'freelance') {
+                return 'Freelance';
+            }
+
+            if (tag === 'professionnel') {
+                return 'Professionnel';
+            }
+
+            return tag;
+        }
+
+        function getExperienceBadgeClasses(tag) {
+            const baseClasses = 'inline-block bg-white text-sm font-bold px-4 py-2 rounded-xl shadow-xl';
+
+            if (tag === 'stage') {
+                return `${baseClasses} text-orange-700`;
+            }
+
+            if (tag === 'freelance') {
+                return `${baseClasses} text-violet-700`;
+            }
+
+            if (tag === 'professionnel') {
+                return `${baseClasses} text-slate-700`;
+            }
+
+            return `${baseClasses} text-gray-700`;
+        }
+
+        function renderExperienceBadge(experience) {
+            const tag = getExperienceTag(experience);
+
+            if (!tag) {
+                return '';
+            }
+
+            return `<span class="${getExperienceBadgeClasses(tag)}">${getExperienceBadgeLabel(tag)}</span>`;
+        }
+
         fetch('ex.json')
             .then(res => res.json())
             .then(data => {
@@ -49,6 +97,7 @@
       <img src="${experiences.image}" alt="${experiences.title}" class="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-xl shadow-lg">
       <div class="md:w-1/2 flex flex-col justify-center">
           <h1 class="text-4xl font-bold mb-4">${experiences.title}</h1>
+          <div class="mb-4">${renderExperienceBadge(experiences)}</div>
           <p class="text-gray-700 mb-4">${experiences.description}</p>
           ${experiences.competences && experiences.competences.length ? `<p class="text-gray-600 mb-4"><strong>Technologies & compétences utilisées :</strong> ${experiences.competences.join(', ')}</p>` : ''}
           ${experiences.lienRealisation ? `<a href="${experiences.lienRealisation}" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-gray-900 transition-colors">Voir mes réalisations</a>` : ''}
@@ -65,7 +114,11 @@
                 data.filter(p => p.id !== id && p.type === 'experience').forEach(p => {
                     autresContainer.innerHTML += `
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                            <img src="${p.image}" alt="${p.title}" class="w-full h-48 object-cover">
+                            <div class="relative overflow-hidden">
+                                <img src="${p.image}" alt="${p.title}" class="w-full h-48 object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                                <div class="absolute bottom-4 left-4">${renderExperienceBadge(p)}</div>
+                            </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold mb-2">${p.title}</h3>
                                 <p class="text-gray-700 mb-4">${p.description.substring(0, 80)}...</p>

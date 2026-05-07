@@ -11,7 +11,10 @@
             "CSS",
             "PHP",
             "MySQL"
-        ]
+        ],
+           "tags": [
+        "scolaire"
+    ]
     },
     {
         "id": 2,
@@ -22,7 +25,10 @@
         "link": "projet.html?id=2",
         "stack": [
             "Illustrator"
-        ]
+        ],
+           "tags": [
+        "freelance"
+    ]
     },
     {
         "id": 3,
@@ -36,7 +42,10 @@
             "Tailwind CSS",
             "JavaScript",
             "Supabase"
-        ]
+        ],
+           "tags": [
+        "personnel"
+    ]
     }, 
     {
         "id": 4,
@@ -50,7 +59,10 @@
             "CSS",
             "JavaScript"
         ],
-        "Github": "https://github.com/Stelvix/Steeven-Portfolio"
+        "Github": "https://github.com/Stelvix/Steeven-Portfolio",
+           "tags": [
+        "personnel"
+    ]
     }, 
     {
         "id": 5,
@@ -66,7 +78,10 @@
             "PHP",
             "MySQL"
         ],
-        "Github": "https://github.com/Stelvix/bijouterie"
+        "Github": "https://github.com/Stelvix/bijouterie",
+           "tags": [
+        "scolaire"
+    ]
     },
     {
         "id": 6,
@@ -79,7 +94,10 @@
             "HTML",
             "CSS"
             
-        ]
+        ],
+           "tags": [
+        "scolaire"
+    ]
     },
     {
         "id": 7,
@@ -91,7 +109,10 @@
         "stack": [
             "Python (Open CV, Pip, GPIO)",
             "Arduino"
-        ]
+        ],
+           "tags": [
+        "scolaire"
+    ]
     },
 {
     "id": 8,
@@ -108,8 +129,125 @@
         "CSS",
         "Twig"
     ],
-    "Github": "https://github.com/Stelvix/Zootopia"
+    "Github": "https://github.com/Stelvix/Zootopia",
+       "tags": [
+        "scolaire"
+    ]
     
+},
+
+{
+    "id": 9,
+    "title": "Space Invaders (Python)",
+    "description": "Space Invaders est un mini-jeu développé en Python dans le cadre d’un projet collaboratif. Le joueur contrôle un vaisseau, tire des lasers et doit éliminer des ennemis tout en survivant le plus longtemps possible. Le jeu intègre un système de score, des vies, des collisions dynamiques ainsi que des effets sonores et une musique de fond. Les ennemis apparaissent de manière continue avec des vitesses aléatoires, rendant chaque partie différente.",
+    "image": "images/Space-Invaders.webp",
+    "type": "projet",
+    "link": "projet.html?id=9",
+    "stack": [
+        "Python",
+        "Turtle",
+        "Pygame"
+    ],
+    "tags": [
+        "scolaire"
+    ],
+    "Github": "https://github.com/Stelvix/Space-Invider"
+},
+
+{
+    "id": 10,
+    "title": "Shopping List API",
+    "description": "Shopping List API est une API REST développée pour gérer une liste de courses de manière simple et efficace. Elle permet d’ajouter, consulter, modifier et supprimer des produits, tout en organisant les achats par catégories. Le projet inclut la mise en place d’endpoints REST, une documentation avec Swagger/OpenAPI ainsi qu’une structure claire orientée back-end, facilitant son intégration dans une application web ou mobile.",
+    "image": "images/ShoppingList.webp",
+    "type": "projet",
+    "link": "projet.html?id=10",
+    "stack": [
+        "Java",
+        "Spring Boot",
+        "REST API",
+        "Swagger",
+        "Maven",
+        "React"
+    ],
+    "tags": [
+        "personnel"
+    ],
+    "Github": "https://github.com/Stelvix/shoppinglist"
+},
+{
+    "id": 11,
+    "title": "Project Hub",
+    "description": "Project Hub est une application fullstack de gestion de projets reposant sur une architecture découplée frontend/backend. Le projet met en œuvre une API REST sécurisée avec Symfony, un système d’authentification basé sur JWT et une base de données relationnelle. Il permet de créer, modifier, supprimer et suivre des projets, tout en intégrant une gestion des utilisateurs. L’architecture a été pensée pour être évolutive et maintenable, avec des fonctionnalités en cours comme un dashboard administrateur et une vue calendrier.",
+    "image": "images/projecthub.png",
+    "type": "projet",
+    "link": "projet.html?id=11",
+    "stack": [
+        "Vue.js",
+        "Symfony",
+        "PHP",
+        "MariaDB",
+        "JWT",
+        "REST API"
+    ],
+    "tags": [
+        "personnel"
+    ],
+    "Github": "https://github.com/Stelvix/ProjectHub"
+},
+{
+    "id": 12,
+    "title": "Student Panel",
+    "description": "Student Panel est une application web développée avec Vue.js permettant de gérer un annuaire d’élèves. L’administrateur peut se connecter, consulter la liste des étudiants, en ajouter, modifier ou supprimer, ainsi que marquer certains profils en favoris. Le projet met en œuvre une gestion d’état avec Pinia et s’appuie sur Supabase comme service backend pour l’API et la gestion des données.",
+    "image": "images/studentpanel.png",
+    "type": "projet",
+    "link": "projet.html?id=12",
+    "stack": [
+        "Vue.js",
+        "Pinia",
+        "Supabase",
+        "JavaScript",
+        "HTML",
+        "CSS"
+    ],
+    "tags": [
+        "scolaire"
+    ],
+    "Github": "https://github.com/Stelvix/StudentPanel"
+},
+{
+    "id": 13,
+    "title": "Spender App",
+    "description": "Spender App est une application mobile développée avec Flutter permettant de gérer ses dépenses au quotidien. L’utilisateur peut ajouter des dépenses, suivre leur évolution et prochainement les trier par date. Ce projet met en pratique le développement mobile cross-platform ainsi que la gestion des données côté client dans une interface simple et intuitive.",
+    "image": "images/spenderapp.png",
+    "type": "projet",
+    "link": "projet.html?id=13",
+    "stack": [
+        "Flutter",
+        "Dart"
+    ],
+    "tags": [
+        "scolaire"
+    ],
+    "Github": "https://github.com/Stelvix/spender_app"
+},
+{
+    "id": 14,
+    "title": "ImmoForm",
+    "description": "ImmoForm est une application de gestion de formations destinée aux agences immobilières. Elle permet aux agences de s’inscrire à des formations, de gérer leurs inscriptions et de suivre leurs données. Le projet repose sur une architecture hybride avec un frontend en Symfony et un backend en C# hébergé sur Azure DevOps, mettant en avant une séparation claire des responsabilités et une approche orientée services.",
+    "image": "images/immoform.png",
+    "type": "projet",
+    "link": "projet.html?id=14",
+    "stack": [
+        "Symfony",
+        "C#",
+        "Azure DevOps",
+        "MySQL",
+        "Architecture API"
+    ],
+    "tags": [
+        "scolaire"
+    ],
+    "Github": "https://github.com/Stelvix/Immoform"
 }
 
 

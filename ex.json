@@ -6,6 +6,9 @@
         "image": "images/Netir Accueil.png",
         "link": "experience.html?id=1",
         "type": "experience",
+        "tags": [
+            "stage"
+        ],
         "rapportstage": "https://stage-omega-rosy.vercel.app/",
         "competences": [
             "Intégration web",
@@ -23,6 +26,9 @@
         "image": "images/freelance.jpg",
         "type": "experience",
         "link": "experience.html?id=2",
+        "tags": [
+            "freelance"
+        ],
         "lienRealisation": "realisations.html",
         "competences": [
             "Créativité",
@@ -38,6 +44,9 @@
         "image": "images/3d image.jpg",
         "type": "experience",
         "link": "experience.html?id=3",
+        "tags": [
+            "professionnel"
+        ],
         "competences": [
             "SketchUp",
             "Mesures sur site",
@@ -50,8 +59,11 @@
   "title": "Stage de deuxième année",
   "description": "Stage axé sur le développement web, le back-end et l’administration système. Développement d’APIs en C# .NET (Minimal API) avec authentification JWT, gestion de bases MariaDB/MySQL et administration Linux / Proxmox. Réalisation d’un POC WordPress Headless avec un front-end en Blazor Server, en consommant l’API REST WordPress via HttpClient. Ce projet m’a permis d’explorer une architecture découplée, la gestion des échanges JSON et les enjeux de performance et de sécurisation des flux.",
   "image": "images/la tete dans la toile.jpg",
-  "link": "experience.html?id=2",
+  "link": "experience.html?id=4",
   "type": "experience",
+  "tags": [
+    "stage"
+  ],
   "rapportstage": "https://stage-b2.vercel.app/",
   "competences": [
     "WordPress",
