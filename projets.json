@@ -198,7 +198,7 @@
     "id": 12,
     "title": "Student Panel",
     "description": "Student Panel est une application web développée avec Vue.js permettant de gérer un annuaire d’élèves. L’administrateur peut se connecter, consulter la liste des étudiants, en ajouter, modifier ou supprimer, ainsi que marquer certains profils en favoris. Le projet met en œuvre une gestion d’état avec Pinia et s’appuie sur Supabase comme service backend pour l’API et la gestion des données.",
-    "image": "images/studentpanel.png",
+    "image": "images/studentsPanel.png",
     "type": "projet",
     "link": "projet.html?id=12",
     "stack": [
