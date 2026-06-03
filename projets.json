@@ -178,7 +178,7 @@
     "id": 11,
     "title": "Project Hub",
     "description": "Project Hub est une application fullstack de gestion de projets reposant sur une architecture découplée frontend/backend. Le projet met en œuvre une API REST sécurisée avec Symfony, un système d’authentification basé sur JWT et une base de données relationnelle. Il permet de créer, modifier, supprimer et suivre des projets, tout en intégrant une gestion des utilisateurs. L’architecture a été pensée pour être évolutive et maintenable, avec des fonctionnalités en cours comme un dashboard administrateur et une vue calendrier.",
-    "image": "images/projecthub.png",
+    "image": "images/ProjectHub.png",
     "type": "projet",
     "link": "projet.html?id=11",
     "stack": [
@@ -234,7 +234,7 @@
     "id": 14,
     "title": "ImmoForm",
     "description": "ImmoForm est une application de gestion de formations destinée aux agences immobilières. Elle permet aux agences de s’inscrire à des formations, de gérer leurs inscriptions et de suivre leurs données. Le projet repose sur une architecture hybride avec un frontend en Symfony et un backend en C# hébergé sur Azure DevOps, mettant en avant une séparation claire des responsabilités et une approche orientée services.",
-    "image": "images/immoform.png",
+    "image": "images/Immoform.png",
     "type": "projet",
     "link": "projet.html?id=14",
     "stack": [
